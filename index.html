@@ -9,18 +9,49 @@
 </head>
 <body>
     <div class="imageContainer">
-        <img class="mainImage" src="joel-fulgencio-6g9BxgCNQv4-unsplash.jpg" alt="Photo of street at night with blue and pink neon lights">
         <h2 class="credit">
             Photo by Joel Fulgencio on Unsplash
         </h2>
+        <div class="logoBackground"></div>
         <div class="nameContainer">
-            <div class="logoBackground"></div>
-            <h1>Arisaka</h1>
             <img class="logoImage" src="kisspng-flag-of-japan-clip-art-shape-5ad5e3cd2d75f6.1836308615239669251862.png">
+            <h1>Arisaka</h1>
         </div>
     </div>
     <div class="right_container">
-
+        <div class="textContainer">
+            <p class="bigP">This is not a real online service! 
+                You know you need something like this in your life to help you realize your deepest dreams.
+                <br> Sign up <i>now</i> to get started.</p>
+            <p class="medP">You <i>know</i> you want to.</p>
+            <p class="smallP">Let's do this!</p>
+        </div>
+        <form>
+            <div class="firstName">
+                <label for="name">FIRST NAME</label>
+                <input type="text" name="firstName" id="firstName" required>
+            </div>
+            <div class="lastName">
+                <label for="name">LAST NAME</label>
+                <input type="text" name="lastName" id="lastName" required>
+            </div>
+            <div class="email">
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="phoneNum">
+                <label for="phone">PHONE NUMBER</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            </div>
+            <div class="password">
+                <label for="password">PASSWORD</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <div class="confirmPassword">
+                <label for="password"> CONFIRM PASSWORD</label>
+                <input type="password" name="confirmPassword" id="confirmPassword" required>
+            </div>
+        </form>
     </div>
     <script src="myscript.js"></script>
 </body>
