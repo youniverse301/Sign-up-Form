@@ -442,14 +442,15 @@ padding-left: 5%;
 form {
   display: flex;
   flex-flow: row wrap;
-  max-width: 70%;
+  width: 65vw;
+
 }
 
   .firstName {
     display: flex;
     flex-direction: column;
     width: 18vw;
-    padding-left: 7%;
+    padding-left: 5%;
     padding-right: 7%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: .9vw;
@@ -472,7 +473,7 @@ form {
     display: flex;
     flex-direction: column;
     width: 18vw;
-    padding-left: 7%;
+    padding-left: 5%;
     padding-right: 7%;
     padding-top: 3%;
     font-family: Arial, Helvetica, sans-serif;
@@ -497,7 +498,7 @@ form {
     display: flex;
     flex-direction: column;
     width: 18vw;
-    padding-left: 7%;
+    padding-left: 5%;
     padding-right: 7%;
     padding-top: 3%;
     font-family: Arial, Helvetica, sans-serif;
@@ -512,15 +513,79 @@ form {
     width: 18vw;
     padding-left: 7%;
     padding-top: 3%;
+    padding-bottom: 2%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: .9vw;
     font-weight: normal;
     letter-spacing: 0.1em;
   }
 
-  :focus{
+  input:focus{
     outline: none;
     border-color: blue;
     border-radius: 5px;
 }
 
+input {
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.rightContainer {
+  display: flex;
+  flex-flow: column;
+}
+
+.toprightContainer {
+  display: flex;
+  flex-flow: column;
+  margin: 0;
+  height: 70vh;
+  width: 100%;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 20px #00000029;
+  position: relative;
+  z-index: 10;
+}
+
+.bottomrightContainer {
+display: flex;
+flex-flow: column;
+align-content: flex-start;
+margin: 0;
+height: 30vh;
+background-color: #F9FAFB;
+position: relative;
+}
+
+.account {
+margin-top: 5%;
+margin-left: 5%;
+width: 12vw;
+height: 5vh;
+font-size: 1.1vw;
+font-family: Arial, Helvetica, sans-serif;
+background-color: #E78698;
+border: none;
+border-radius: 5px;
+position: relative
+}
+
+.loginText {
+  padding-left: 5%;
+  padding-top: 2%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3vw;
+  font-weight: normal;
+  width: 90%;
+}
+
+a.login {
+  color: #E78698;
+}
+
+a.login:visited {
+  color: #000000;
+}
